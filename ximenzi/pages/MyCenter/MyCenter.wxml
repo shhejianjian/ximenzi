@@ -1,0 +1,61 @@
+<!--more.wxml-->
+<view class="container">
+
+  <view class="user-info-box">
+    <block wx:if="{{is_bind}}">
+      <view class="user-info">
+        <view class="info-hd">
+          <image class="user-avatar" src="{{userinfo.avatarUrl}}"></image>
+          <view class="user-title">
+            <text class="user-name">{{user.we.info.name}}</text>
+            <text class="user-id">{{user.we.info.id}}</text>
+          </view>
+          
+        </view>
+        
+        
+      </view>
+      
+    </block>
+    <view  class="user-info" wx:else>
+      <view class="info-hd">
+        <image class="user-avatar" src="{{userinfo.avatarUrl}}"></image>
+        <view class="user-title">
+          <text class="user-name">{{userinfo.nickName}}</text>
+          <text class="user-id">未绑定</text>
+        </view>
+        <text class="bind-btn">前往绑定</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="../../image/enter.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="more-list">
+    <view  class="issue-link">
+      <view class="more-btn">
+        <image class="btn-icon" src="../../image/issue.png"></image>
+        <text class="btn-text">反馈</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="../../image/enter.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="about-link">
+      <view class="more-btn">
+        <image class="btn-icon" src="../../image/about.png"></image>
+        <text class="btn-text">关于</text>
+        <view class="btn-open">
+            <image class="btn-enter" src="../../image/enter.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view url="login" class="login-btn">
+    <text wx:if="{{is_bind}}">切换绑定</text>
+    <text wx:else>立即绑定</text>
+  </view>
+
+</view>

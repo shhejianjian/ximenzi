@@ -1,0 +1,40 @@
+
+<view class="container">
+
+
+
+    <view class="search-box">
+            <input class="search-input" bindinput="onInputChange" placeholder="请输入搜索内容"/>
+            <image class="search-img" bindtap="search" src="../../image/search.png"></image>
+    </view>
+
+    <view  class="bill-list">
+        <block wx:for="{{billLists}}" wx:for-item="bill" wx:key="index">
+            <view class="bill-item" bindtap="navigateToDetail" data-index="{{index}}">
+                
+                <view class="bill-description">
+                    <view class="billStatusAndTimeView">
+                        <view class="bill-name">工单状态：{{bill.billStatus}}</view>
+                        <view style="color:red" class="bill-startTime"> {{bill.billStartTime }}</view>
+                    </view>
+                    <view>
+                        <text class="bill-type"> {{bill.billEquipType }}</text>
+                    </view>
+                    <view class="imageTextView">
+                        <image class="address-image" src="../../image/equipInfo8.png"></image>
+                        <view class="bill-address">工单号：{{bill.billNumber}}</view>
+                    </view>
+                    <view class="imageTextView">
+                    <image class="address-image" src="../../image/person.png"></image>
+                    <view class="bill-address">报修人：{{bill.billPerson}}</view>
+                    </view>
+                    <view class="imageTextView">
+                    <image class="address-image" src="../../image/equipInfo9.png"></image>
+                    <view class="bill-address">预计{{bill.billSuccessTime}}完成</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+
+</view>

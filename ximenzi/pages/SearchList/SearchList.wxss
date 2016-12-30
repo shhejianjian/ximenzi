@@ -1,0 +1,118 @@
+page {
+  background-color: #F8F8F8;
+}
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #F8F8F8;
+}
+
+/* search-box */
+.search-box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: white;
+    height: 80rpx;
+    margin: 20rpx 25rpx 0 25rpx;
+    box-shadow: 3rpx 3rpx 3rpx #CFCFCF;
+    border-radius: 4rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.search-input {
+    flex-grow: 1;
+    font-size: 32rpx;
+    font-family: "Microsoft YaHei UI";
+}
+
+.search-img {
+    height: 50rpx;
+    width: 50rpx;
+    margin-left: 20rpx;
+}
+.address-image {
+    width: 35rpx;
+    height: 35rpx;
+}
+.imageTextView{
+    align-items: center;
+    margin-top: 10rpx;
+    display: flex;
+    flex-flow: row nowrap;
+}
+/* bill list */
+.bill-list {
+    background: red;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    background-color: #F8F8F8;
+}
+
+.bill-item {
+    box-shadow: 3rpx 3rpx 3rpx #CFCFCF;
+    border-radius: 5rpx;
+    /*border: 1rpx lightgrey solid;*/
+    margin: 20rpx;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 25rpx;
+    height: auto;
+}
+
+.bill-image {
+    height: 150rpx;
+    width: 200rpx;
+}
+
+.bill-description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25rpx;
+    justify-content: space-between;
+}
+
+.billStatusAndTimeView {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bill-startTime {
+    font-family: "Microsoft YaHei UI";
+    font-size: 24rpx;    
+}
+.bill-name {
+    font-family: "Microsoft YaHei UI";
+    font-size: 32rpx;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-break: 2;
+    word-break: break-all;
+    width: 500rpx;
+}
+
+.bill-type {
+    font-family: "Microsoft YaHei UI";
+    font-size: 24rpx;
+    color: white;
+    background: coral;
+    border-radius: 5rpx;
+    padding: 10rpx 15rpx 10rpx 15rpx;
+    width: 80rpx;
+    text-align: center;
+}
+
+.bill-address {
+    margin-left: 10rpx;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    color: grey;
+}
+

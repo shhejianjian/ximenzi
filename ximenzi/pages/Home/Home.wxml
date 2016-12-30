@@ -1,0 +1,32 @@
+<view class="container">
+
+    <!--<view class="profile-bar">
+        <image class="profile" src="../../image/set.png" bindtap="User"></image>
+    </view>-->
+
+    <view class="logo-bar">
+        <image class="logo" src="../../image/testLogo.png"></image>
+    </view>
+    
+    
+    <view  class="swiper-box">
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}">
+          <swiper-item>
+            <image src="{{background[index]}}" mode="scaleToFill" class="swiper-item"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="search-option-bar">
+        <block wx:for="{{searchOptions}}" wx:key="index">
+            <view class="search-option-item" bindtap="searchOptionOnTap" data-index="{{index}}">
+                <image class="search-option-icon" src="{{item.icon}}"></image>
+                <text class="search-option-text">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+
+</view>

@@ -1,0 +1,74 @@
+<view class="container">
+
+    <view class="imageView">
+        <image class="equiImage" src="../../image/testEquiImg.png"></image>
+    </view>
+
+    <view class="equip-Description">
+        <view class="titleView">
+            <image class="address-image" src="../../image/equipInfo1.png"></image>
+            <view class="section-Title">设备信息:</view>
+        </view>
+        <view class="equipmentInfoView">
+            <view class="section-Text">浙江台州市中心医院经济开发区中央大街</view>
+            <view class="section-Text"># MAGNETOM Harmony</view>
+            <view>
+                <text class="section-Type">核磁共振设备</text>
+            </view>
+        </view>
+        
+        
+    </view>
+<view class="line"></view>
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo2.png"></image>
+        <view class="section-Title">设备识别码:</view>
+        <view class="sectiontext">720-910999</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo3.png"></image>
+        <view class="section-Title">设备序列号:</view>
+        <view class="sectiontext">10419</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo4.png"></image>
+        <view class="section-Title">保修合同信息:</view>
+        <view class="sectiontext">无</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo7.png"></image>
+        <view class="section-Title">设备状态:</view>
+        <view class="sectiontext">宕机</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/repot.png"></image>
+        <view class="section-Title">故障描述:</view>
+        <view class="sectiontext">无法开机</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo8.png"></image>
+        <view class="section-Title">工单号:</view>
+        <view class="sectiontext">0000000000001</view>
+    </view>
+
+    <view class="equipNumberBar">
+    <image class="address-image" src="../../image/equipInfo9.png"></image>
+        <view class="section-Title">时间点:</view>
+        <view class="sectiontext">2016-12-28 12:52</view>
+    </view>
+
+    <view class="equipNumberBar">
+        <view class="section-otherText">报修成功，技术专家开始远程技术澄清与问题解决。</view>
+    </view>
+
+    <view class="commitView">
+        <button class="commitBtn" type="default" bindtap="navigateToFixPage">完成</button>
+    </view>
+
+
+</view>

@@ -1,0 +1,64 @@
+<view class="container">
+
+    <view class="imageView">
+        <image class="equiImage" src="../../image/testEquiImg.png"></image>
+    </view>
+
+    <view class="equip-Description">
+        <view class="titleView">
+            <image class="address-image" src="../../image/equipInfo1.png"></image>
+            <view class="section-Title">设备信息:</view>
+        </view>
+
+        <view class="equipmentInfoView">
+            <view class="section-Text">浙江台州市中心医院经济开发区中央大街</view>
+            <view class="section-Text"># MAGNETOM Harmony</view>
+            <view>
+                <text class="section-Type">核磁共振设备</text>
+            </view>
+        </view>
+        
+        
+    </view>
+    <view class="line"></view>
+
+    <view class="equipNumberBar">
+        <image class="address-image" src="../../image/equipInfo2.png"></image>
+        <view class="section-Title">设备识别码: </view>
+        <view class="sectiontext"> 720-910999</view>
+    </view>
+
+    <view class="equipNumberBar">
+        <image class="address-image" src="../../image/equipInfo3.png"></image>
+        <view class="section-Title">设备序列号: </view>
+        <view class="sectiontext"> 10419</view>
+    </view>
+
+    <view class="equipNumberBar">
+        <image class="address-image" src="../../image/equipInfo4.png"></image>
+        <view class="section-Title">保修合同信息: </view>
+        <view class="sectiontext"> 无</view>
+    </view>
+
+    <view class="equipNumberBar" bindtap="callEngineerTelephone">
+        <image class="address-image" src="../../image/equipInfo5.png"></image>
+        <view class="section-Title">首席工程师: </view>
+        <view class="sectiontext">张三，</view>
+        <text style="color:dodgerblue" class="sectiontext">13263526783</text>
+    </view>
+
+    <view class="equipNumberBar" bindtap="callManagerTelephone">
+        <image class="address-image" src="../../image/equipInfo6.png"></image>
+        <view class="section-Title">客户经理: </view>
+        <view class="sectiontext">李四，</view>
+        <text style="color:dodgerblue" class="sectiontext">13263526783</text>
+    </view>
+
+    <view class="commitView">
+        <button class="commitBtn" type="default" bindtap="navigateToFixPage">报修</button>
+    </view>
+
+
+</view>
+
+<image class="upload-image" bindtap="changePhoto" src="../../image/testUpload.png"></image>

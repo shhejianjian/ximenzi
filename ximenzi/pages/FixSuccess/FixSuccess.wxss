@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    /*background: #F8F8F8;*/
+}
+/*imageview*/
+.imageView{
+    width: 100%;
+    height: 400rpx;
+}
+.titleView {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.equiImage {
+    width: 100%;
+    height: 400rpx;
+}
+.address-image {
+    width: 45rpx;
+    height: 45rpx;
+}
+/*description*/
+.equip-Description {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20rpx;
+}
+.equipmentInfoView {
+    margin-left: 50rpx;
+}
+.section-Title {
+    margin-left: 10rpx;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    font-weight: bold;
+}
+
+.section-Text {
+    color: #4D4D4D;
+    margin-top: 10rpx;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-break: 2;
+    word-break: break-all;  
+    width: 100%;
+    
+}
+.section-Type {
+    margin-top: 10rpx;
+    font-family: "Microsoft YaHei UI";
+    font-size: 24rpx;
+    color: white;
+    background: coral;
+    border-radius: 5rpx;
+    padding: 10rpx 15rpx 10rpx 15rpx;
+    /*width: 200rpx;*/
+    text-align: left;
+}
+.sectiontext {
+    margin-left: 10rpx;
+    color: #4D4D4D;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    
+}
+.equipNumberBar {
+    align-items: center;
+    padding: 20rpx;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.section-otherText {
+    font-size: 30rpx;
+    color: coral;
+}
+.commitView{
+ margin-top:10px; 
+ padding: 10px;
+}
+.commitBtn {
+    background-color: #27a59c;
+    color: white;
+}
+.line {
+    margin-left: 25rpx;
+    margin-right: 25rpx;
+    background: #eFeFeF;
+    height: 1rpx;
+}

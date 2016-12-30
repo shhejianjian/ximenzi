@@ -1,0 +1,39 @@
+page {
+  background-color: #F8F8F8;
+}
+.picker{
+  padding: 26rpx;
+  background-color: white;
+  height: 100rpx;
+  color: gray;
+}
+.pickerForEquipment{
+  padding: 26rpx;
+  background-color: white;
+  height: 40rpx;
+  color: gray;
+}
+.section-title {
+  padding: 20rpx;
+  margin-top: 10rpx;
+  color: #4D4D4D;
+  font-weight: bold;
+}
+.section-input{
+  margin-top: 15px;
+  padding: 20rpx;
+  background-color: white;
+}
+.section-input-detail {
+    margin-top: 30rpx;
+    padding: 20rpx;
+    background-color: white;
+}
+.commitView{
+    margin-top:10px; 
+    padding: 10px;
+}
+.commitBtn {
+    background-color: #27a59c;
+    color: white;
+}

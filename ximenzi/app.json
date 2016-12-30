@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/Home/Home",
+    "pages/EquiDetail/EquiDetail",
+    "pages/InputFixInfo/InputFixInfo",
+    "pages/FixSuccess/FixSuccess",
+    "pages/SearchList/SearchList",
+    "pages/FixTimeAxis/FixTimeAxis",
+    "pages/MyCenter/MyCenter"
+  ],
+  "window": {
+    "navigationBarTitleText": "维修服务中心",
+    "navigationBarBackgroundColor":"#27a59c"
+  },
+  "tabBar": {
+    "color": "#7f848a",
+    "selectedColor": "#27a59c",
+    "backgroundColor": "#f8f8f8",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/Home/Home",
+      "text": "首页",
+      "iconPath": "image/home-normal.png",
+      "selectedIconPath": "image/home-selected.png"
+    },  {
+      "pagePath": "pages/MyCenter/MyCenter",
+      "text": "我的",
+      "iconPath": "image/my-normal.png",
+      "selectedIconPath": "image/my-selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

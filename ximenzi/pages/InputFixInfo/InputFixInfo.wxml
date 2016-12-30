@@ -1,0 +1,23 @@
+<view class="container">
+        <view class="section-input">
+            <input bindchange="companyNameChange" placeholder="请填写报修人名称"/>
+        </view>
+        <view class="section-input">
+            <input bindchange="companyTelephoneChange" placeholder="请填写联系电话"/>
+        </view>
+        <view class="section-title">请选择设备状态</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="pickerForEquipment">
+            当前选择：{{array[index]}}
+            </view>
+        </picker>
+
+        
+        <view class="section-input-detail">
+            <textarea bindblur="detailIssueChange" style="height:300rpx" placeholder="请填写故障描述"/>
+        </view>
+
+        <view class="commitView">
+        <button class="commitBtn" type="default" bindtap="navigateToFixPage">确认</button>
+        </view>
+ </view>

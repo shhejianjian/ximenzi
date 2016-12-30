@@ -1,0 +1,139 @@
+
+/**bx_detail.wxss**/
+.container{
+    background-color: #f7f7f7;
+}
+
+
+.repair-state-panel, .work-sheet-panel{
+    /*align-items: center;*/
+    display: flex;
+    flex-direction: column;
+}
+.repair-state-title, .work-sheet-title{
+    color: #888;
+    padding: 15rpx;
+    margin-left: 10rpx;
+}
+.repair-state, .work-sheet{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.repair-state{
+    padding: 30rpx 0 20rpx 20rpx;
+}
+.repair-state-item{
+    display: flex;
+    align-items: flex-start;
+    margin: 10rpx 0 5rpx;
+}
+.repair-state-icon{
+    position: relative;
+    z-index: 2;
+    width: 25rpx;
+    height: 25rpx;
+    border-radius: 50rpx;
+    background: #d8d8d8;
+    border: 5rpx solid #eee;
+    margin: 15rpx 30rpx;
+}
+.repair-state-icon-active{
+    background: #E3630D;
+    border: 5rpx solid #f9bca7;
+}
+
+.repair-state-info{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.repair-state-info::before{
+    position: absolute;
+    top: 30rpx;
+    left: -47rpx;
+    content: '';
+    width: 5rpx;
+    background: #eee;
+    height: 100%;
+}
+.repair-state-info.repair-state-info-last{
+    border: none;
+}
+.repair-state-info.repair-state-info-last::before{
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+.repair-info-bd {
+    color: #888;
+}
+.repair-info-bd.repair-state-name{
+    flex: 1;
+    color: #777;
+    font-size: 28rpx;
+    margin: 10rpx 0;
+}
+.repair-info-bd.repair-state-name-active{
+    flex: 1;
+    color: #E3630D;
+    font-size: 30rpx;
+    margin: 10rpx 0;
+}
+.repair-info-item{
+    padding: 10rpx;
+    display: flex;
+    flex-flow: column;
+    /*align-items: center;*/
+    height: auto;
+}
+.repair-note-ft{
+    padding-left: 120rpx;
+}
+
+.work-sheet{
+    padding: 20rpx;
+}
+.repair-info-ft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 45rpx;
+}
+.repair-note-ft{
+    text-align: right;
+}
+
+
+.address-image {
+    width: 40rpx;
+    height: 40rpx;
+}
+.equipNumberBar {
+
+    align-items: center;
+    padding: 20rpx;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sectiontext {
+    height: auto;
+    margin-left: 10rpx;
+    color: #4D4D4D;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    
+}
+.section-Title {
+    margin-left: 10rpx;
+    font-family: "Microsoft YaHei UI";
+    font-size: 28rpx;
+    font-weight: bold;
+}
