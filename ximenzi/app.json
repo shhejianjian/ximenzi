@@ -9,7 +9,7 @@
     "pages/MyCenter/MyCenter"
   ],
   "window": {
-    "navigationBarTitleText": "维修服务中心",
+    "navigationBarTitleText": "报修服务中心",
     "navigationBarBackgroundColor":"#27a59c"
   },
   "tabBar": {
