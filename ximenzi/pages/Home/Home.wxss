@@ -63,13 +63,21 @@ page {
 
 /* search-option-bar */
 .search-option-bar {
+    opacity: 0;
+    padding-bottom: 200rpx;
+    /*position: relative;*/
     margin-top: 20rpx;
     display: flex;
     flex-flow: row nowrap;
     height: 180rpx;
     align-items: center;
+    animation: rise 3s cubic-bezier(0.19, 1, 0.22, 1) .25s forwards;
 }
-
+@keyframes rise{
+  0% {opacity: 0;transform: translate3d(0,100%,0);}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;transform: translate3d(0,0rpx,0);}
+}
 .search-option-item {
     display: flex;
     flex-flow: column nowrap;
@@ -81,8 +89,17 @@ page {
 .search-option-icon {
     height: 110rpx;
     width: 110rpx;
+    /*animation: sway 5s linear;*/
 }
-
+/*@keyframes sway{
+  0% {transform: translate3d(0,0rpx,0) rotate(-25deg); }
+  17% {transform: translate3d(0,0rpx,0) rotate(25deg); }
+  34% {transform: translate3d(0,0rpx,0) rotate(25deg); }
+  50% {transform: translate3d(0,0rpx,0) rotate(25deg); }
+  67% {transform: translate3d(0,0rpx,0) rotate(-25deg); }
+  84% {transform: translate3d(0,0rpx,0) rotate(25deg); }
+  100% {transform: translate3d(0,0rpx,0) rotate(25deg); }
+}*/
 .search-option-text {
     margin-top: 20rpx;
     color: #8a8a8a;
