@@ -10,14 +10,15 @@
     
     
     <view  class="swiper-box">
-      <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper class="swiper" indicator-dots="true" 
+        autoplay="true" interval="5000" duration="1200">
         <block wx:for="{{background}}">
           <swiper-item>
             <image src="{{background[index]}}" mode="scaleToFill" class="swiper-item"></image>
           </swiper-item>
         </block>
       </swiper>
+      
     </view>
 
     <view class="search-option-bar">

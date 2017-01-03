@@ -19,7 +19,7 @@ var searchOptions = [
     {
         name: "故障",
         icon: "../../image/breakdown.png",
-    }
+    },
 ];
 var initSearchOptions = function () {
     simpleLib.setData(route, {
@@ -73,13 +73,7 @@ Page({
   data:{
 
     index:0,
-
     background: ['../../image/firstPage.png', '../../image/secondPage.png', '../../image/firstPage.png', '../../image/secondPage.png'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: true,
-    interval: 5000,
-    duration: 1200
   },
   
   onLoad:onload,
