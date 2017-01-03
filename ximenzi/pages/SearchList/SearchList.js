@@ -10,6 +10,7 @@ var billList = [
         billSuccessTime: "2016-12-29",
         billPerson: "王五",
         billEquipType:"核磁共振设备",
+        isHidden:false,
     },
     {
         billStatus: "人工报价确认中",
@@ -18,6 +19,7 @@ var billList = [
         billSuccessTime: "2016-12-29",
         billPerson: "赵六",
         billEquipType:"核磁共振设备",
+        isHidden:true,
     },
     {
         billStatus: "工程师调派中",
@@ -26,6 +28,7 @@ var billList = [
         billSuccessTime: "2016-12-29",
         billPerson: "钱七",
         billEquipType:"核磁共振设备",
+        isHidden:true,
     },
     {
         billStatus: "维修完成",
@@ -34,16 +37,26 @@ var billList = [
         billSuccessTime: "2016-12-29",
         billPerson: "李四",
         billEquipType:"核磁共振设备",
+        isHidden:true,
     }
 ]; 
 
 var initBillList = function () {
+    if(simpleLib.getGlobalData().isAddNewSheet){
+        billList[0].isHidden = false;
+    } else {
+        billList[0].isHidden = true;
+    }
     simpleLib.setData(route, {
         billLists: billList
     });
 };
 
-var navigateToDetail = function () {
+var navigateToDetail = function (e) {
+    var index = e.currentTarget.dataset.index;
+    if(index == 0){
+        simpleLib.getGlobalData().isAddNewSheet = false;
+    }
     wx.navigateTo({
       url: '../FixTimeAxis/FixTimeAxis'
     })
@@ -51,15 +64,23 @@ var navigateToDetail = function () {
 
 
 var onload = function () {
-    console.log("onload")
+    
+    initBillList();
+    // simpleLib.setData(route,{
+    //     isHiddenPoint:simpleLib.getGlobalData().isAddNewSheet
+    // })
+};
+
+var onShow = function (){
     initBillList();
 };
 
 Page({
   data:{
-
+    //   isHiddenPoint:false,
   },
   
   onLoad:onload,
+  onShow:onShow,
   navigateToDetail:navigateToDetail,
 });

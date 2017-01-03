@@ -14,6 +14,7 @@ var bindPickerChange = function(e) {
     })
 };
 var navigateToFixPage = function () {
+    simpleLib.getGlobalData().isAddNewSheet = true;
     wx.navigateTo({
       url: '../FixSuccess/FixSuccess'
     })

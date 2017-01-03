@@ -22,6 +22,7 @@ var searchOptions = [
     },
 ];
 var initSearchOptions = function () {
+    console.log(searchOptions[1].icon)
     simpleLib.setData(route, {
         searchOptions: searchOptions
     });
@@ -69,6 +70,16 @@ var onload = function () {
     initSearchOptions();
 };
 
+var onShow = function (){
+    if(simpleLib.getGlobalData().isAddNewSheet){
+        searchOptions[1].icon = '../../image/pointSheet.png';
+        initSearchOptions();
+    } else {
+        searchOptions[1].icon = '../../image/sheet.png';
+        initSearchOptions();
+    }
+}
+
 Page({
   data:{
 
@@ -77,6 +88,7 @@ Page({
   },
   
   onLoad:onload,
+  onShow:onShow,
   searchOptionOnTap:searchOptionOnTap,
 });
 

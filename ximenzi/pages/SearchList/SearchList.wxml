@@ -14,7 +14,15 @@
                 
                 <view class="bill-description">
                     <view class="billStatusAndTimeView">
-                        <view class="bill-name">工单状态：{{bill.billStatus}}</view>
+
+                        <view class="titleImImageView">
+                        
+                            <view class="bill-name">工单状态：{{bill.billStatus}}</view>
+                            <view class="pointView" hidden="{{bill.isHidden}}">
+                                <image class="bill-point" src="../../image/redPoint.png" ></image>
+                            </view>
+                        </view>
+
                         <view style="color:red" class="bill-startTime"> {{bill.billStartTime }}</view>
                     </view>
                     <view>

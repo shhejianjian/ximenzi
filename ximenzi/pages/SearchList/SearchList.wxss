@@ -81,6 +81,19 @@ page {
     align-items: center;
     justify-content: space-between;
 }
+
+.titleImImageView{
+    display: flex;
+    align-items: center;
+}
+.pointView{
+    display: flex;
+    align-items: center;
+}
+.bill-point {
+    width: 40rpx;
+    height: 40rpx;
+}
 .bill-startTime {
     font-family: "Microsoft YaHei UI";
     font-size: 24rpx;    
@@ -95,7 +108,9 @@ page {
     -webkit-box-orient: vertical;
     -webkit-line-break: 2;
     word-break: break-all;
-    width: 500rpx;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 
 .bill-type {
